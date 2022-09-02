@@ -65,3 +65,19 @@ no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
 то такой вывод означает, то в репозитории изменен отслеживаемый файл с именем *\<filename>*.
+
+### 5.2 git add
+Команда ***`git add`*** используется для начала отслеживания за новым файлом. Для файла с именем *\<filename>*, чтобы начать его отслеживание в репозитории, необходимо ввести:
+```
+git add <filename>
+```
+
+При этом команда ***`git status`*** покажет, что файл стал отслеживаемым:
+```
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   <filename>
+```
+
